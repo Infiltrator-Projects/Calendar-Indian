@@ -1,0 +1,78 @@
+{
+  "title": "Indian National Saka Calendar",
+  "intro": "India's national civil calendar is a modern date system that uses the Saka Era and twelve named months alongside the Gregorian calendar.",
+  "summary": "A solar calendar with twelve months. Chaitra begins on 22 March in ordinary Gregorian years and 21 March in leap years.",
+  "origin": "India adopted the Indian National Calendar in 1957. Its year count uses the Saka Era; the calendar was designed for consistent official use across regions.",
+  "ring_label": "12",
+  "ring_caption": "MONTHS",
+  "diagram_title": "THE NATIONAL SAKA YEAR",
+  "structure": "The calendar begins with Chaitra. Its month lengths follow the Gregorian solar year, with the first month adjusted in leap years.",
+  "diagram_caption": "12 SOLAR MONTHS / A SAKA ERA YEAR",
+  "sections": [
+    {
+      "name": "Chaitra",
+      "days": "30/31",
+      "special": true
+    },
+    {
+      "name": "Vaishakha",
+      "days": "31",
+      "special": false
+    },
+    {
+      "name": "Jyeshtha",
+      "days": "31",
+      "special": false
+    },
+    {
+      "name": "Ashadha",
+      "days": "31",
+      "special": false
+    },
+    {
+      "name": "Shravana",
+      "days": "31",
+      "special": false
+    },
+    {
+      "name": "Bhadra",
+      "days": "31",
+      "special": false
+    },
+    {
+      "name": "Ashvina",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Kartika",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Agrahayana",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Pausha",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Magha",
+      "days": "30",
+      "special": false
+    },
+    {
+      "name": "Phalguna",
+      "days": "30",
+      "special": false
+    }
+  ],
+  "pattern_note": "Chaitra length changes with Gregorian leap years. The names refer to the national civil calendar, not every regional Indian religious calendar.",
+  "history": "The Saka national calendar is used for certain official Indian purposes. Many other regional lunisolar and solar traditions continue to be used for religious and cultural events.",
+  "example": "Gregorian 22 March 2026 falls at the start of Chaitra in Saka year 1948 under the normal-year convention.",
+  "limits": "This model represents India's modern national calendar, not the entire range of historic Indian date systems. Calendar conventions must be distinguished from regional practice.",
+  "source": "https://github.com/Infiltrator-Projects/Calendar-Indian"
+}
