@@ -48,4 +48,4 @@ Each package owns only this provider and its passive documentation. Its `Replace
 
 ## Illustrated user guide
 
-The installed package contains exactly two provider files: `Indian National Saka Calendar.so` and `Indian National Saka Calendar.pdf`. Technical audits remain in GitHub and native build provenance is recorded in Debian control metadata.
+The installed package contains exactly two provider files: `Indian National Saka Calendar.so` and `Calendar-Indian.pdf`. Technical audits remain in GitHub and native build provenance is recorded in Debian control metadata.
