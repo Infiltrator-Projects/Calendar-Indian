@@ -25,6 +25,7 @@
 #include <unicode/udat.h>
 #include <unicode/uloc.h>
 #include <unicode/ustring.h>
+#include <unicode/uversion.h>
 
 #ifdef _WIN32
 #include <windows.h>
@@ -186,16 +187,16 @@ missing_symbol:
 static void
 initialise_bridge(void)
 {
-    static const char *const majors[] = {
-        "81", "80", "79", "78", "77", "76", "75", "74", "73", "72"
-    };
-    size_t index;
-
-    for (index = 0; index < INFILTRATR_ARRAY_LENGTH(majors); index++)
+    /* Start with the ABI used for this build; support the established 72+
+     * runtime series without freezing the range at the 2026 ICU releases. */
+    const int newest = U_ICU_VERSION_MAJOR_NUM > 81 ? U_ICU_VERSION_MAJOR_NUM : 81;
+    for (int major = newest; major >= 72; --major)
     {
+        char version[16];
         IcuBridgeApi candidate = { 0 };
+        (void)snprintf(version, sizeof(version), "%d", major);
 
-        if (try_icu_major(majors[index], &candidate))
+        if (try_icu_major(version, &candidate))
         {
             bridge_api = candidate;
             return;
