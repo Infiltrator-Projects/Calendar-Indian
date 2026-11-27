@@ -1,13 +1,7 @@
 {
   "title": "Indian National Saka Calendar",
-  "intro": "India's national civil calendar is a modern date system that uses the Saka Era and twelve named months alongside the Gregorian calendar.",
-  "summary": "A solar calendar with twelve months. Chaitra begins on 22 March in ordinary Gregorian years and 21 March in leap years.",
-  "origin": "India adopted the Indian National Calendar in 1957. Its year count uses the Saka Era; the calendar was designed for consistent official use across regions.",
-  "ring_label": "12",
-  "ring_caption": "MONTHS",
-  "diagram_title": "THE NATIONAL SAKA YEAR",
-  "structure": "The calendar begins with Chaitra. Its month lengths follow the Gregorian solar year, with the first month adjusted in leap years.",
-  "diagram_caption": "12 SOLAR MONTHS / A SAKA ERA YEAR",
+  "intro": "India's national civil Saka calendar is a solar date system used alongside Gregorian dates.",
+  "structure": "Twelve named months begin with Chaitra. It has 30 days in ordinary Gregorian years and 31 in leap years; the next five months have 31 days and the final six have 30.",
   "sections": [
     {
       "name": "Chaitra",
@@ -70,9 +64,12 @@
       "special": false
     }
   ],
-  "pattern_note": "Chaitra length changes with Gregorian leap years. The names refer to the national civil calendar, not every regional Indian religious calendar.",
-  "history": "The Saka national calendar is used for certain official Indian purposes. Many other regional lunisolar and solar traditions continue to be used for religious and cultural events.",
-  "example": "Gregorian 22 March 2026 falls at the start of Chaitra in Saka year 1948 under the normal-year convention.",
-  "limits": "This model represents India's modern national calendar, not the entire range of historic Indian date systems. Calendar conventions must be distinguished from regional practice.",
-  "source": "https://github.com/Infiltrator-Projects/Calendar-Indian"
+  "model": "The provider derives dates from the proleptic Gregorian year. Chaitra 1 is 22 March in an ordinary year and 21 March in a Gregorian leap year; the Saka year at that boundary is Gregorian year minus 78.",
+  "example": "22 March 2026 Gregorian corresponds to Chaitra 1, Saka 1948.",
+  "history": "India adopted the national calendar in 1957 for consistent official use. Regional religious and cultural traditions continue to employ other solar and lunisolar calendars.",
+  "limits": "This is the modern national Saka convention, not a reconstruction of all historic Indian calendars.",
+  "sources": [
+    "https://github.com/Infiltrator-Projects/Calendar-Indian",
+    "Model evidence: https://github.com/Infiltrator-Projects/Calendar-Indian/blob/main/docs/MODEL.md"
+  ]
 }
